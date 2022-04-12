@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>ReactLifecycle</h1>
+    <p>
+        <b>React Life Cycle Methods</b></p>
+
+    <p><b> There are three Phases of React LifeCycle:-</b></p>
+
+    <p> <b>1. Mounting<br>
+     2.Updating<br>
+     3.Unmounting</b></p>
+
+
+    <p> <b>In Mounting Phase:-</b></p>
+    <p> (i)Constructor<br>
+        (ii)getDerivedStateFromProps<br>
+        (iii)render<br>
+        (iv)componentDidMount</p>
+
+    <p><b> In Updating Phase:-</b><br>
+        (i)getDerivedStateFromProps<br>
+        (ii)shouldComponentUpdate<br>
+        (iii)render<br>
+        (iv)getSnapShotBeforeUpdate<br>
+        (v)componentDidUpdate</p>
+
+    <p><b> In Unmounting Phase:-</b></p>
+    <p> (i)componentWillUnmount</p>
+
+
+
+    <p> Explanation:-</p>
+
+    <p><b> In Mounting Phase:-</b></p>
+    <p> <b>(i)Constructor:-</b>Constructor method is the first method which is called, when the component is initiated,and it
+        is used to set up the intial state and initial values.</p>
+
+    <p> <b>(ii)getDerivedStateFromProps:- </b>The getDerivedStateFromProps() method is called right before rendering the
+        element(s) in the DOM.
+        This is the natural place to set the state object based on the initial props.
+        It takes state as an argument, and returns an object with changes to the state.</p>
+
+    <p> <b>(iii)render:-</b> The render() method is required, and is the method that actually outputs the HTML to the DOM.</p>
+
+    <p><b>(iv)componentDidMount:-</b> The componentDidMount() method is called after the component is rendered.
+        This is where you run statements that requires that the component is already placed in the DOM.</p>
+
+
+    <p><b> In Updating Phase:-</b></p><br>
+    <p> <b>(i)getDerivedStateFromProps:- </b>This is the first method that is called when a component gets updated.
+        This is the natural place to set the state object based on the initial props.</p>
+
+    <p><b> (ii)shouldComponentUpdate:-</b> In the shouldComponentUpdate() method you can return a Boolean value that specifies
+        whether React should continue with the rendering or not.
+        The default value is true.</p>
+
+    <p><b> (iii)render:-</b>The render() method is of course called when a component gets updated, it has to re-render the HTML
+        to the DOM, with the new changes.</p>
+
+    <p><b> (iv)getSnapShotBeforeUpdate:-</b>In the getSnapshotBeforeUpdate() method you have access to the props and state
+        before the update, meaning that even after the update, you can check what the values were before the update.</p>
+
+    <p><b> (v)componentDidUpdate:-</b>The componentDidUpdate method is called after the component is updated in the DOM.</p>
+
+
+    <p> <b>In Unmounting Phase:-</b></p>
+    <p> <b>(i)componentWillUnmount:-</b> The componentWillUnmount method is called when the component is about to be removed
+        from the DOM.
+    </p>
+
+</body>
+
+</html>
